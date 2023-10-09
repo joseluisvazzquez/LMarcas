@@ -1,2 +1,2 @@
 # LMarcas
-## [Actividades](https://joseluisvazzquez.github.io/LMarcas/inde.html)
+## [Actividades](https://joseluisvazzquez.github.io/LMarcas/index.html)
