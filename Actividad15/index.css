@@ -1,0 +1,18 @@
+header{
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+    margin: ;
+    padding: ;
+}
+section{
+    display:flex;
+    justify-content: space-between;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+div{
+    background-color: aquamarine;
+}
