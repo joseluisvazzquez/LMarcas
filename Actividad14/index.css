@@ -11,10 +11,10 @@ header{
     flex-direction: row;
     box-shadow: 0 9px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-nav{
+nav{ 
     margin: 20px 20px 20px;
-    margin-left: 600px;
-    word-spacing: 50px;
+    margin-left: 350px;
+    word-spacing: 40px;
     font-style: italic;
 }
 a{
@@ -24,6 +24,7 @@ a{
 }
 div{
     margin: 20px 100px 20px; 
+    margin-left:350px;
 }
 input{
     border-radius: 8px;
