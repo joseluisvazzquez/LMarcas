@@ -16,11 +16,12 @@ nav{
 
     padding-left: 0px;
     padding-right: 120px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     text-align: center;
     line-height: 25px;
     margin-right: 20px;
     margin-top: 5px;
+    position: fixed;
 }   
 main{
     float: center;
@@ -29,9 +30,25 @@ main{
     margin-right: 80px;
     padding-right: 20px;
     padding-bottom: 20px;
+    position:fixed;
+}
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    
+}
+div{ 
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 6px;
+    float: left;
+    box-shadow: 0 9px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 footer{
-    float:center;
+    float: center;
     background-color: rgb(87, 87, 87);
     text-align: center;
     padding-top: 20px;
@@ -39,6 +56,6 @@ footer{
     margin-left:29px;
     margin-right: 80px;
 }
-.b1{
-    
-}
+
+
+
