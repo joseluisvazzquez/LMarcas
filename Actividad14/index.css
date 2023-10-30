@@ -1,5 +1,5 @@
 
-.container{
+nav{
     display: flex;
     justify-content: space-between;
     background-color: rgb(58, 57, 56);
@@ -7,19 +7,24 @@
     box-shadow: 0 9px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 20px;
 }
-nav{
-    word-spacing: 50px;
-}
 a{
-    transition: 0.5s;
+    transition: 2.5s;
     font-family: Trebuchet MS;
     color: burlywood;
     font-size: large;
     text-decoration: none;
 }
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+
+}
 a:hover{
-    transition: margin-right 2s 5s;
-    color:rgb(101, 134, 163);
+    transition: margin-right 6s 5s;
+    color:rgb(176, 183, 189);
 }
 header{
     margin-left: 20px;
