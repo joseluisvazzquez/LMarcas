@@ -1,18 +1,47 @@
 header{
     display: flex;
     justify-content: center;
-    background-color: bisque;
-    margin: ;
-    padding: ;
+    margin: 80px;
+    font-family:Georgia;
+    color: rgb(156, 130, 97);
 }
 section{
     display:flex;
-    justify-content: space-between;
+    margin-left: 50px;
+   margin-right: 50px;
 }
 img{
-    width: 200px;
-    height: 200px;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
 }
+    
+
 div{
-    background-color: aquamarine;
+    display: flexbox;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 130px;
+    margin-top: 30px;
+    padding: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    text-align: center;
+    box-shadow: 0 9px 9px 5px rgba(0, 0, 0, 0.096), 0 6px 20px 0 rgba(0, 0, 0, 0.024);
+    position: relative;
+    transition: transform .2s;
+
+}
+div:hover{
+    transform: scale(1.1);
+}
+body{
+    font-family: Verdana;
+}
+h3{
+    color: burlywood;
+}
+.n{
+    color: darksalmon;
 }
