@@ -1,0 +1,11 @@
+body {
+
+}
+
+body > div {
+padding: 0;
+}
+
+body > div > div {
+padding: 20px;
+}
