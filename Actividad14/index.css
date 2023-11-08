@@ -42,21 +42,3 @@ button{
 input{
     border-radius: 20px;
 }
-@media screen and (max-width: 628px){
-    ul{
-        display:none;
-    }
-    .search{
-        justify-content: left;
-    }
-    button{
-        display:flex;
-    }
-}
-@media screen and (max-width: 390px){
-    .search{
-        display:none;
-    }
-}
-
-
