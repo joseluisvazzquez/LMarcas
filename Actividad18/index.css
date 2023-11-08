@@ -38,7 +38,7 @@ p{
         content: "Cuidado!! Si me haces mas pequeña aparecera un gato!!"
     }
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 560px){
     body{
         background-color:rgb(90, 87, 87);
     }
