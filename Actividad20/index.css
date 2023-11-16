@@ -1,0 +1,109 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(58, 57, 56);
+    align-items: center;
+    box-shadow: 0 9px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+}
+a{
+    transition: 2.5s;
+    font-family: Trebuchet MS;
+    color: burlywood;
+    font-size: large;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+
+}
+a:hover{
+    transition: margin-right 6s 5s;
+    color:rgb(176, 183, 189);
+}
+header{
+    margin-left: 20px;
+    font-family:Franklin Gothic Small;
+    color: darksalmon;
+    font-style: italic;
+}
+.search{
+    margin-right: 30px;
+}
+button{
+    margin-right: 30px;
+    display: none;
+}
+input{
+    border-radius: 20px;
+}
+@media screen and (max-width: 628px){
+    ul{
+        display:none;
+    }
+    .search{
+        justify-content: left;
+    }
+    button{
+        display:flex;
+    }
+}
+@media screen and (max-width: 390px){
+    .search{
+        display:none;
+    }
+}
+/*Apartir de aqui es el segundo main = contenedor*/
+.t2 {
+    display: flex;
+    justify-content: center;
+    margin: 70px 80px 80px;
+    font-family: Georgia;
+    color: rgb(156, 130, 97);
+}
+
+.sec1-2{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.img2 {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+
+
+div {
+    width: 200px;
+    justify-content: center;
+    padding: 10px 20px 20px 20px;
+    text-align: center;
+    box-shadow: 3px 2px 4px 1px rgba(0, 0, 0, 0.096), 0 6px 20px 0 rgba(0, 0, 0, 0.024);
+    transition: transform .2s;
+}
+
+div:hover {
+    transform: scale(1.05);
+}
+
+body {
+    font-family: Verdana;
+    overflow: auto;
+    display: flexbox;
+    justify-content: center;
+ 
+}
+
+h3 {
+    color: burlywood;
+}
+
+.n {
+    color: darksalmon;
+}
