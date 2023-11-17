@@ -1,3 +1,12 @@
+body {
+    display:grid;
+    grid-template-areas:
+    'nav nav nav nav nav'
+    'sec1 sec1 sec1'
+    'sec2 sec2 sec2'
+    'sec3 sec3 sec3'
+    'footer footer footer footer';
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -6,14 +15,14 @@ nav{
     box-shadow: 0 9px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 20px;
 }
-a{
+nav a{
     transition: 2.5s;
     font-family: Trebuchet MS;
     color: burlywood;
     font-size: large;
     text-decoration: none;
 }
-ul{
+nav ul{
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -21,7 +30,7 @@ ul{
 
 
 }
-a:hover{
+nav a:hover{
     transition: margin-right 6s 5s;
     color:rgb(176, 183, 189);
 }
@@ -34,21 +43,21 @@ header{
 .search{
     margin-right: 30px;
 }
-button{
+nav button{
     margin-right: 30px;
     display: none;
 }
-input{
+nav input{
     border-radius: 20px;
 }
 @media screen and (max-width: 628px){
-    ul{
+  nav  ul{
         display:none;
     }
     .search{
         justify-content: left;
     }
-    button{
+    nav button{
         display:flex;
     }
 }
@@ -65,7 +74,12 @@ input{
     font-family: Georgia;
     color: rgb(156, 130, 97);
 }
-
+.sec2{
+     font-family: Verdana;
+    display: flexbox;
+    justify-content: center;
+    background-color: aqua;
+}
 .sec1-2{
     display: flex;
     justify-content: center;
@@ -79,7 +93,7 @@ input{
 }
 
 
-div {
+.d2 {
     width: 200px;
     justify-content: center;
     padding: 10px 20px 20px 20px;
@@ -88,16 +102,8 @@ div {
     transition: transform .2s;
 }
 
-div:hover {
+.d2:hover {
     transform: scale(1.05);
-}
-
-body {
-    font-family: Verdana;
-    overflow: auto;
-    display: flexbox;
-    justify-content: center;
- 
 }
 
 h3 {
@@ -106,4 +112,33 @@ h3 {
 
 .n {
     color: darksalmon;
+}
+/*Apartir de aqui es el tercer section = contenedor*/
+.sec3{
+    font-family: Verdana;
+   display: flexbox;
+   justify-content: center;
+   background-color: rgb(119, 211, 211);
+}
+.sec1-3{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.d3 {
+    width: 200px;
+    justify-content: center;
+    padding: 10px 20px 20px 20px;
+    text-align: center;
+    box-shadow: 3px 2px 4px 1px rgba(0, 0, 0, 0.096), 0 6px 20px 0 rgba(0, 0, 0, 0.024);
+    transition: transform .2s;
+}
+.d3:hover {
+    transform: scale(1.05);
+}
+
+.img3 {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
 }
