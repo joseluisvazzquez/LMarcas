@@ -210,6 +210,9 @@ footer{
     .article2{
         width: 250px;
     }
+    .img{
+        padding-top: 80px;
+    }
 
     .section2,.section3,.footer{
         flex-wrap: wrap;
