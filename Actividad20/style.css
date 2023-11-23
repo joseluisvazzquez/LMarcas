@@ -9,6 +9,7 @@ body {
     'footer';
     font-family:  'Lucida Sans Unicode';
 }
+
 article{
     margin: 20px 20px 40px 20px;
 }
@@ -40,10 +41,19 @@ nav a:hover{
     color:rgb(176, 183, 189);
 }
 header{
-    margin-left: 20px;
+    display: flex;
+    margin-left: 10px;
     font-family:Calibri;
     color: rgb(255, 255, 255);
     font-style: italic;
+}
+header img{
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 40%;
 }
 .search{
     margin-right: 30px;
@@ -55,7 +65,7 @@ nav button{
 nav input{
     border-radius: 20px;
 }
-@media screen and (max-width: 628px){
+@media screen and (max-width: 1030px){
   nav  ul{
         display:none;
     }
@@ -66,7 +76,7 @@ nav input{
         display:flex;
     }
 }
-@media screen and (max-width: 390px){
+@media screen and (max-width: 466px){
     .search{
         display:none;
     }
@@ -74,7 +84,7 @@ nav input{
 /*Apartir de aqui es el primer main = contenedor*/
 .section1{
     display: flex;
-    background-image: url(o.jpg);
+    background-image: url(a10.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border-bottom-left-radius: 20px;
@@ -83,11 +93,11 @@ nav input{
 
 }
 .article1{
-    margin-top: 90px; 
+    margin-top: 90px;
 }
 .img1{
-    width: 400px;
-    height:450px ;
+    width: 540px;
+    height:450px;
     object-fit: cover;
     border-radius: 20px 70px;
     margin-top: 40px;
@@ -117,7 +127,7 @@ nav input{
     border-radius: 20px;
     
     background: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(225, 225, 225));
-    padding: 20px 10px 70px 10px;
+    padding: 0px 10px 0px 10px;
     width: 200px;
     
 }
@@ -166,6 +176,19 @@ nav input{
     transform: scale(1.06);
     transition: 0.8s;
 }
+.button1{
+    border-radius: 20px;
+    box-shadow: 0 9px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    background: linear-gradient(to bottom right, rgb(124, 124, 124), rgb(9, 9, 9));
+    color: antiquewhite;
+    padding: 10px 30px;
+    border: none;
+    transition-duration: 0.8s;
+}
+.button1:hover {
+    transition: 1s;
+    box-shadow: 0 9px 20px 0 rgba(0, 0, 0, 0.645), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  }
 .title2,.title3{
     padding-left: 106px;
     padding-bottom: auto;
@@ -183,7 +206,7 @@ form{
 .contact{
     text-align: center;
 }
-button{
+.button2{
     border-radius: 5px;
     box-shadow: 0 9px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
     background: linear-gradient(to bottom right, rgb(83, 83, 83), rgb(9, 9, 9));
@@ -196,15 +219,29 @@ footer{
     display: flex;
     background: linear-gradient(to bottom right, rgb(83, 83, 83), rgb(9, 9, 9));
     border-radius: 20px;
-    padding: 40px;
+    padding: 20px;
     justify-content: space-around;
 }
 .links{
-    padding: 20px;
+    justify-content: space-around;
+    margin: 20px;
     border-radius: 60px;
-    color: rgba(230, 235, 240, 0.654);
-    
-    
+    color: rgba(230, 235, 240, 0.654);  
+}
+.links a,ul{
+    font-size: large;
+    color: rgba(230, 235, 240, 0.654);  
+    text-decoration: none;
+    list-style: none;
+    transition: 2.5s;
+}
+.links a:hover{
+    transition: margin-right 6s 5s;
+    color:rgb(208, 214, 219);
+}
+.links img{
+    height: 50px;
+    width: 50px;
 }
 @media screen and (max-width: 1427px){
     .article2{
@@ -214,13 +251,16 @@ footer{
         padding-top: 80px;
     }
 
-    .section2,.section3,.footer{
+    .section2,.section3,footer{
         flex-wrap: wrap;
     }
 }
 @media screen and (max-width: 1009px){
     .section1{
         flex-wrap:wrap
+    }
+    .img1{
+        width: 70%;
     }
 }
 h3{

@@ -4,19 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navegacion</title>
+    <title>Practica 1</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <nav>
         <header>
-            <h2>Editorial</h2>
+            <img src="a11.png" alt="img">
+            <h2>Worldwise</h2>
         </header>
         <ul>
-            <li><a href="https://joseluisvazzquez.github.io/LMarcas/Actividad12/index.html">Inici</a></li>
-            <li><a href="https://i.giphy.com/media/10rW4Xw9eO0RmU/giphy.webp">Contacte</a></li>
-            <li><a href="https://i.giphy.com/media/bYdol5sZWOBqM/giphy.webp">Autors</a></li>
+            <li><a href="#1">Sobre Nosotros</a></li>
+            <li><a href="#2">Nuestros Servicios</a></li>
+            <li><a href="#3">Portfolio</a></li>
+            <li><a href="#4">Contactanos</a></li>
         </ul>
 
         <div class="search">
@@ -24,83 +26,70 @@
         </div>
         <button>Ξ</button>
     </nav>
-    <section class="section1">
+    <section class="section1" id="1">
        
         <article class="article1">
            <h2>Sobre Nosotros</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Laborum magni nemo ea, facere ut ipsam autem beatae maiores eius 
-                perspiciatis officiis numquam? Vero sit minima quia animi consequuntur amet velit?
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Laborum magni nemo ea, facere ut ipsam autem beatae maiores eius 
-                perspiciatis officiis numquam? Vero sit minima quia animi consequuntur amet velit?
+            <p>Somos un grupo de chavales con gustos un tanto peculiares, fanáticos del diseño web
+                y estamparnos con el código. Siempre conseguimos exprimir lo mejor de nosotros
+                e innovar hasta en lo imposible. 
             </p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Laborum magni nemo ea, facere ut ipsam autem beatae maiores eius 
-                perspiciatis officiis numquam? Vero sit minima quia animi consequuntur amet velit?
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Laborum magni nemo ea, facere ut ipsam autem beatae maiores eius 
-                perspiciatis officiis numquam? Vero sit minima quia animi consequuntur amet velit?
+            <p>Se preguntará si yo duermo tranquilo por las noches pero como usted bien sabe, ¡no es así! Estamos
+                Dispuestos a solucionar sus problemas y recuerde que al fin y al cabo la realidad también está hecha con código.
+                «Todo lo que siempre has querido está al otro lado del miedo». George Addair. 
             </p> 
         </article>
             <img class="img1" src="a.gif" alt="img">
     </section>
-        <div class="title2"><h2>Nuestros Servicios</h2></div>
-    <section class="section2">
+        <div class="title2" id="2"><h2>Nuestros Servicios</h2></div>
+    <section class="section2" >
         <article class="article2">
             <img class="img2" src="a1.png" alt="img">
             <h3>Diseño gráfico</h3>
-            <p>Lorem ipsum dolor sit amet consectetur</p>
-            <p class="n"></p>
+            <p>Capaces de crear de muchas formas distintas y con estilos unicos! Incluimos publicidad!</p>
         </article>
 
         <article class="article2">
             <img class="img2" src="a2.png" alt="img">
             <h3>Desarrollo Web y Videojuegos</h3>
-            <p>Lorem ipsum dolor sit amet consectetur</p>
-            <p class="n"></p>
+            <p>Fanaticos por los juegos y dispuestos a desafiar lo indesafiable. Diseño de paginas a tu gusto!</p>
         </article>
 
         <article class="article2">
             <img class="img2" src="a3.png" alt="img">
             <h3>CEO y Marketing Digital</h3>
-            <p>Lorem ipsum dolor sit amet consectetur</p>
-            <p class="n"></p>
+            <p>Dejanos ayudarte y será como encontrar una mina de oro!</p>
         </article>
 
         <article class="article2">
             <img class="img2" src="a4.png" alt="img">
             <h3>Soporte Tecnico</h3>
-            <p>Lorem ipsum dolor sit amet consectetur</p>
-            <p class="n"></p>
+            <p>Contamos con un buen soporte tecnico y con muchos recursos de codigo abierto en github!!</p>
         </article>
     </section>
-        <div class="title3"><h2>Nuestro Portfolio</h2></div>
-    <section class="section3">
+        <div class="title3" id="3"><h2>Nuestro Portfolio</h2></div>
+    <section class="section3"  >
        
         <article class="article3">
             <img class="img3" src="a5.gif" alt="img">
             <h3>Proyecto 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur</p>
-            <p class="n"></p>
+            <button class="button1" type="button"><b>Detalles</b></button>
         </article>
 
         <article class="article3">
             <img  class="img3" src="a6.gif" alt="img">
             <h3>Proyecto 2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur</p>
-            <p class="n"></p>
+            <button class="button1" type="button"><b>Detalles</b></button>
         </article>
 
         <article class="article3">
             <img  class="img3" src="a7.gif" alt="img">
             <h3>Proyecto 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur</p>
-            <p class="n"></p>
+            <button class="button1" type="button"><b>Detalles</b></button>
         </article>
-    </section class="section4">
+    </section>
 
-    <section class="form">
+    <section class="form" id="4">
         <form>
             <div class="contact">
                 <h2>Contactanos</h2>
@@ -114,36 +103,46 @@
         
             <label for="mensaje">Escribir:</label>
             <textarea name="Mensaje" id="mensaje" rows="8" cols="20"></textarea>
-            <button type="button">Enviar!</button>
+            <button class="button2"type="button">Enviar!</button>
         </form>
     </section>
+    
     <footer>
         <div class="links">
-            <h4>CideTech</h4>
-            <p>CideTech es una empresa lider en soluciones tecnológicas
-                dedicada a portar las ulyimas innovaciones al mercado.
+            <h4>WorldWise</h4>
+            <p>WorldWise es una empresa lider en soluciones tecnológicas
+                dedicada a portar las ultimas innovaciones al mercado, basada en la confianza, la experiencia y el conocimiento del sector tecnológico. 
+                Desde 2005 somos expertos en diseño web y Marketing.
+                Buscamos innovar, descubrir y responder día a día a las últimas necesidades de la comunidad.
             </p>
             
         </div>
         
         <div class="links">
-            <h4>Navegación</h4>
-            <a>Sobre Nosotros...</a>
-            <a>Servicio...</a>
-            <a>Servicio...</a>
+            <ul>
+                <li><h4>Navegación</h4></li>
+                <li><a href="#1">Sobre Nosotros</a></li>
+                <li><a href="#2">Servicios</a></li>
+                <li><a href="#3">Proyectos</a></li>
+                <li><a href="#4">Contactanos</a></li>
             </ul>
         </div>
+    
         <div class="links">
-            <h4>Contactanos</h4>
-            <p>650 45 45 45</p>
-            <p>jvazq.5@gmail.com</p>
-            <p>C/L'Arner, 4, 2</p>
+            <ul>
+                <li><h4>Contactanos</h4></li>
+                <li><a>650 45 45 45</a></li>
+                <li><a href="https://www.google.com/intl/es/gmail/about/">worldwised@gmail.com</a></li>
+                <li><a href="https://www.google.com/maps/@39.5907865,2.6102138,18.96z?entry=ttu">Carrer de l'Arner, 3</a></li>
+            </ul>
         </div>
+    
         <div class="links">
             <h4></h4>
             <ul>
-                <li></li>
-                <li></li>
+                <li><a href="https://es.linkedin.com/"><img src="a9.png" alt="img"></a></li>
+                <li><a href="https://www.instagram.com/"><img src="a8.png" alt="img"></a></li>
+                <li><a href="https://github.com/"><img src="a4.png" alt="img"></a></li>
             </ul>
         </div>
     </footer>
