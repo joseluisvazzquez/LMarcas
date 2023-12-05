@@ -1,8 +1,7 @@
 var readline = require('readline');
 
 var rl = readline.createInterface(process.stdin, process.stdout);
-rl.question("Pasame en una temperatura:", (num) => {
-
+rl.question("Pasame una temperatura:", (num) => {
     rl.question("Esta en Farenheit(F) o Celsius(C). Escribe (F) o (C):", (temp) => {
         let c = (num - 32) * (5 / 9)
         let f = (num * 9 / 5) + 32
