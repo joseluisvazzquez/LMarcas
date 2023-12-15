@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="align">
+        <button type = "button" class="btn" onclick="add()">ADD CAT</button>
+        <button type = "button" class="btn" onclick="erase()">DELETE CAT >:(</button>
+    </div>
+    <h1 id="txt">I CAN BE...</h1>
+    <script>
+        function add() { 
+           let image = documet.createElement("img");
+           image.src = "cat.png";
+           image.appendChild(image.src); 
+        }
+        function erase() { 
+            document.getElementById("txt").innerHTML = "SMALLER!! :(";
+        }
+    </script>
+
+</body>
+</html>
