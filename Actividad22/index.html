@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="align">
+        <button type = "button" class="btn" onclick="bigger()">Bigger</button>
+        <button type = "button" class="btn" onclick="smaller()">Smaller</button>
+    </div>
+    <h1 id="txt">I CAN BE...</h1>
+    <script>
+        function bigger() { 
+            document.getElementById("txt").innerHTML = "BIGGER!!:)";
+        }
+        function smaller() { 
+            document.getElementById("txt").innerHTML = "SMALLER!! :(";
+        }
+    </script>
+
+</body>
+</html>
