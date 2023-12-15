@@ -1,20 +1,33 @@
 var readline = require('readline');
 var rl = readline.createInterface(process.stdin, process.stdout);
+let numeros = [10,2,3,4,5,6,7,8,9];
 
-let numeros = [9,10,11,12,13,14,15,1,4,7,8,9,10];
-let resultado = 0;
-rl.question("Vamos a hacer una calculadora, esta calculadora puede sumar, hacer la mediana y encontrar el maximo de mi array. Que te gustaria hacer: sumar(1), mediana(2), maximo-minimo(3)\n", (resp) => {
+total = 0;
+min = numeros[0];
+max = numeros[0];
+
+ for(let i = 0; i <= numeros.length; i++){
+    
+        total +=i;
+
+        if(max < numeros[i]){
+            max = numeros[i];
+        };
+        if(min > numeros[i]){
+            min = numeros[i];
+        };
+    }
+        
+rl.question("Vamos a sumar todos los numeros(1), sacar el maximo y el minimo(2) y hacer la media(3). Escoga:",(resp)=>{
     if(resp == 1){
-      for(let i = 0; i < numeros.length; i++){
-        resultado += numeros[i]; 
-        let mediana = resultado/numeros.length
-        }
-        console.log("La suma de todos los numeros es: ",resultado)  
-    }
+        console.log("La suma total de todos los numeros es: ", total); 
+    };
     if(resp == 2){
-        console.log("La mediana de nuestros numeros es: ", mediana)
+        console.log(`El minimo es = ${min} y el maximo es = ${max}`)
     }
-    rl.close()
+    if(resp == 3){
+        let media = total/numeros.length;
+        console.log("La media de los numeros es: ",media);
+    }
+    rl.close(); 
 })
-rl.question()
- 
