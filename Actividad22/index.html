@@ -15,12 +15,11 @@
     <script>
         function bigger() { 
             document.getElementById("txt").innerHTML = "BIGGER!!:)";
-            
+            document.getElementById("txt").style.fontSize = "x-large";
         }
         function smaller() { 
             document.getElementById("txt").innerHTML = "SMALLER!! :(";
-            var el = document.querySelector('h1');
-            el.outerHTML = '<h2>' + el.innerHTML + '</h2>';
+            document.getElementById("txt").style.fontSize = "x-small";
         }
     </script>
 
