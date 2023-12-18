@@ -6,20 +6,23 @@
     <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
-<body>
+<body id = "body">
     <div class="align">
         <button type = "button" class="btn" onclick="add()">ADD CAT</button>
         <button type = "button" class="btn" onclick="erase()">DELETE CAT >:(</button>
     </div>
     <h1 id="txt">I CAN BE...</h1>
+    
     <script>
+        let image = document.createElement('img');
         function add() { 
-           let image = documet.createElement("img");
-           image.src = "cat.png";
-           image.appendChild(image.src); 
+           image.src = 'cat.png';
+           document.getElementById('body').appendChild(image); 
         }
         function erase() { 
-            document.getElementById("txt").innerHTML = "SMALLER!! :(";
+            image.setAttribute('id','im')
+            const element = document.getElementById('im');
+            element.remove();
         }
     </script>
 
