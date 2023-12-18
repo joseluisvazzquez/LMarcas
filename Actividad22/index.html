@@ -11,15 +11,19 @@
         <button type = "button" class="btn" onclick="bigger()">Bigger</button>
         <button type = "button" class="btn" onclick="smaller()">Smaller</button>
     </div>
-    <h1 id="txt">I CAN BE...</h1>
+    <h1 id ="txt" class="txt">I CAN BE...</h1>
+
     <script>
-        function bigger() { 
-            document.getElementById("txt").innerHTML = "BIGGER!!:)";
-            document.getElementById("txt").style.fontSize = "x-large";
+        const txt = document.getElementById("txt");
+        function bigger() {
+            document.getElementById("txt").innerHTML = "BIGGER!";
+            txt.style.transitionProperty = "width";
+            txt.style.transitionDuration = "2s";
+            txt.style.width = "200px";
+            
         }
         function smaller() { 
             document.getElementById("txt").innerHTML = "SMALLER!! :(";
-            document.getElementById("txt").style.fontSize = "x-small";
         }
     </script>
 

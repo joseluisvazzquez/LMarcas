@@ -27,8 +27,9 @@
     background-color: var(--clr-accent);
     color: var(--clr-light);
 }
-h1,h2{
+.txt{
     margin-top: 3em;
     text-align:  center;
     font-family : Verdana; 
 }
+
