@@ -8,12 +8,10 @@
     <title>Document</title>
 </head>
 
-<body>
+<body id = "body">
 
     <div class = "align">
         <p id="txt" class = "texto">An apple a day keeps the doctor away.</p>
-        
-    
     </div>
     <div class="align">
         <button type="button" class="btn" id ="btn">TRANSLATE</button>
@@ -37,13 +35,24 @@
             }
         }
         function color(){
+            document.getElementById("txt").style.backgroundColor = "#ff6666";
+            document.getElementById("txt").style.color = "#ffffff"
+        
+            
             document.getElementById("btn2").style.backgroundColor = "#ff6666";
             document.getElementById("btn2").style.border ="10px solid #ff6666";
 
+
         }
         function color2(){
+            document.getElementById("txt").style.backgroundColor = "#ffffff";
+            document.getElementById("txt").style.color = "#000000"
+
             document.getElementById("btn2").style.backgroundColor = "#e1e3f9";
             document.getElementById("btn2").style.border ="10px solid #515aa1";
+            
+        }
+        function color3(){
 
         }
         
