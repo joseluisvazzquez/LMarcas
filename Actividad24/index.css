@@ -27,16 +27,16 @@
     background-color: var(--clr-accent);
     color: var(--clr-light);
 }
+.contain{
+    margin: 10rem;
+    padding: 6rem;
+    border-radius: 20rem;
+}
 .texto{
     font-size: 30px;
     font-weight:700;
-    padding: 9rem;
     font-style: oblique;
-    margin: 5px; 
+    margin: 9rem; 
     font-weight:700;
-    border-radius: 20rem;
-    transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
-.texto:hover{
-    color: var(--clr-light);
-}
+
