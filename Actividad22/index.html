@@ -17,13 +17,11 @@
         const txt = document.getElementById("txt");
         function bigger() {
             document.getElementById("txt").innerHTML = "BIGGER!";
-            txt.style.transitionProperty = "width";
-            txt.style.transitionDuration = "2s";
-            txt.style.width = "200px";
-            
+            document.getElementById("txt").style.fontSize = "100px";
         }
         function smaller() { 
             document.getElementById("txt").innerHTML = "SMALLER!! :(";
+            document.getElementById("txt").style.fontSize = "20px";
         }
     </script>
 
