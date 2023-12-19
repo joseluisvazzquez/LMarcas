@@ -1,7 +1,7 @@
 .align{
     display: flex;
-    margin-top: 15em;
     justify-content: center;
+    margin-top:10rem;
 }
 
 
@@ -11,7 +11,7 @@
     font-size: 2rem;
     font-weight:700;
     padding: 0.5em 1em;
-    color: var(--clr-accent) ; 
+    color: var(--clr-accent) ;
     border-radius: 30px;
     background-color: rgb(225, 227, 249);
     border: 10px solid rgb(81, 90, 161);
@@ -26,4 +26,10 @@
     transform: rotate(3deg);
     background-color: var(--clr-accent);
     color: var(--clr-light);
+}
+.texto{
+    font-size: 30px;
+    font-weight:700;
+    padding: 0.5em 1em;
+    font-style: oblique;
 }

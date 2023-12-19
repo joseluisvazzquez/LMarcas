@@ -8,13 +8,45 @@
     <title>Document</title>
 </head>
 
-<body id="body">
-    <div class="align">
-        <button type="button" class="btn" onclick="add()">TRANSLATE</button>
-        <button type="button" class="btn" onclick="erase()">DELETE CAT >:(</button>
-    </div>
+<body>
 
+    <div class = "align">
+        <p id="txt" class = "texto">An apple a day keeps the doctor away.</p>
+        
+    
+    </div>
+    <div class="align">
+        <button type="button" class="btn" id ="btn">TRANSLATE</button>
+        <button type="button" class="btn" id ="btn2"><3</button>
+        
+    </div>
     <script>
+        var x = document.getElementById("btn");
+        var y = document.getElementById("btn2");
+        x.addEventListener("click", translate);
+        y.addEventListener("mouseover", color);
+        y.addEventListener("mouseout",color2); 
+        let Boolean;
+        function translate(){
+            if(Boolean == true ){
+                document.getElementById("txt").innerHTML  = "una manzana al dia mantiene al doctor alejado.";
+                Boolean = false; 
+            }else{
+                document.getElementById("txt").innerHTML  = "An apple a day keeps the doctor away.";
+                Boolean = true; 
+            }
+        }
+        function color(){
+            document.getElementById("btn2").style.backgroundColor = "#ff6666";
+            document.getElementById("btn2").style.border ="10px solid #ff6666";
+
+        }
+        function color2(){
+            document.getElementById("btn2").style.backgroundColor = "#e1e3f9";
+            document.getElementById("btn2").style.border ="10px solid #515aa1";
+
+        }
+        
     </script>
 
 </body>
