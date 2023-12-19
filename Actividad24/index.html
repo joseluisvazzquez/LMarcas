@@ -25,14 +25,17 @@
         x.addEventListener("click", translate);
         y.addEventListener("mouseover", color);
         y.addEventListener("mouseout",color2); 
-        let Boolean;
+        let num = 0; 
         function translate(){
-            if(Boolean == true ){
-                document.getElementById("txt").innerHTML  = "una manzana al dia mantiene al doctor alejado.";
-                Boolean = false; 
+            num = num+1;
+            if(num == 1){
+                document.getElementById("txt").innerHTML  = "Una manzana al día mantiene al doctor en la lejanía.";
             }else{
+                document.getElementById("txt").innerHTML  = "comer bem para ficar saudável.";
+            }
+            if(num == 3){
                 document.getElementById("txt").innerHTML  = "An apple a day keeps the doctor away.";
-                Boolean = true; 
+                num = 0; 
             }
         }
         function color(){
@@ -53,11 +56,7 @@
             document.getElementById("btn2").style.backgroundColor = "#e1e3f9";
             document.getElementById("btn2").style.border ="10px solid #515aa1";
             
-        }
-        function color3(){
-
-        }
-        
+        }  
     </script>
 
 </body>
