@@ -1,0 +1,42 @@
+.align{
+    display: flex;
+    justify-content: center;
+    margin-top:3rem;
+}
+
+
+
+.btn{
+    margin: 5px; 
+    font-size: 2rem;
+    font-weight:700;
+    padding: 0.5em 1em;
+    color: var(--clr-accent) ;
+    border-radius: 30px;
+    background-color: rgb(225, 227, 249);
+    border: 10px solid rgb(81, 90, 161);
+    --clr-accent: rgb(81, 90, 161);
+    --clr-light: rgb(255,255,255);
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+
+}
+
+.btn:hover{
+    transform: translateY(-30px);
+    transform: rotate(3deg);
+    background-color: var(--clr-accent);
+    color: var(--clr-light);
+}
+.contain{
+    margin: 9rem 20rem 9rem 20rem; 
+    padding: 1rem;
+    border-radius: 20rem;
+}
+.texto{
+    font-size: 30px;
+    font-weight:700;
+    font-style: oblique;
+    margin: 9rem 0 5rem 0; 
+    font-weight:700;
+}
+
