@@ -1,0 +1,79 @@
+body{
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.center{
+    display: grid;
+    justify-content: center;
+    font-family:sans-serif;
+    color: aliceblue;
+}
+button{
+    color: aliceblue;
+    margin: 20px;
+    font-size: 23px;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-width:5px;
+    border-style:solid;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 20px;
+}
+h1{
+    font-weight: 400;
+    font-size: 60px;
+    font-style: italic;
+    
+}
+p{
+    font-weight: 500;
+    font-size: larger;
+
+}
+.list{
+    display: flex;
+    padding: 40px;
+    backdrop-filter: blur(30px);
+    border-radius:40px;
+
+}
+.list ul{
+    list-style-type: none;
+    overflow-y:scroll;
+    width: 280px;
+    height: 400px;
+    box-shadow: 0 -10px -10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.40);
+
+}
+.list li{
+    padding: 15px;
+    margin: 5px 0;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.659) 0%, rgba(1, 1, 17, 0.725) 35%, rgba(23, 97, 112, 0.759) 100%);
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+  
+}
+.hidden{
+    display:none;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track { 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(79, 79, 79); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #575757bc; 
+  }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body id="body">
+    <div class="align">
+        <button type="button" class="btn" onclick="add()">ADD CAT</button>
+        <button type="button" class="btn" onclick="erase()">DELETE CAT >:(</button>
+    </div>
+
+    <script>
+        function add() {
+            let image = document.createElement('img');
+            image.setAttribute('id', 'im');
+            image.src = 'cat.png';
+
+            document.getElementById('body').appendChild(image);
+        }
+        function erase() {
+            const element = document.getElementById('im');
+            element.remove();
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+header {
+    display: flex;
+    justify-content: center;
+    margin: 70px 80px 80px;
+    font-family: Georgia;
+    color: rgb(156, 130, 97);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+
+
+div {
+    width: 200px;
+    justify-content: center;
+    padding: 10px 20px 20px 20px;
+    text-align: center;
+    box-shadow: 3px 2px 4px 1px rgba(0, 0, 0, 0.096), 0 6px 20px 0 rgba(0, 0, 0, 0.024);
+    transition: transform .2s;
+}
+
+div:hover {
+    transform: scale(1.05);
+}
+
+body {
+    font-family: Verdana;
+    overflow: auto;
+    display: flexbox;
+    justify-content: center;
+ 
+}
+
+h3 {
+    color: burlywood;
+}
+
+.n {
+    color: darksalmon;
+}

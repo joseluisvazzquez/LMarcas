@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <title>to do List</title>
+</head>
+<body>
+    <div class="center">
+        <div class= "contain_main">
+            <div class ="contain">
+                <input type="text" id="areatexto">
+                <button class="green" id="añadir" onclick="nuevatarea()"></button>
+                <button class="yellow" id="mostrar" onclick="completadas()"></button>
+                <button class="red" id="eliminar" onclick="eliminar()"></button>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <ul class="ul" id="ul">
+        </ul>
+    </div>
+    <script>
+        function nuevatarea(){
+            var li = document.createElement("li");
+            var areatexto = document.getElementById("areatexto").value;
+            var texto = document.createTextNode(areatexto);
+            li.appendChild(texto);
+            if(areatexto === ""){
+                alert("Escribe algo!!!!")
+            }else{
+                document.getElementById("ul").appendChild(li);
+                li.setAttribute("id", "li");             
+                li.addEventListener("click", function(){li.classList.toggle("animacionselect")});
+                li.addEventListener("click", function(){li.classList.remove("completadas")});
+            }  
+        }
+        function eliminar(){
+            var li = document.querySelectorAll('li.animacionselect');
+            for (var i = 0; i < li.length; i++) {
+              li[i].parentNode.removeChild(li[i]);
+            }
+        }
+        function completadas(){
+            var li = document.querySelectorAll('li.animacionselect');
+            var lic = document.querySelectorAll('li.completadas')
+            for (var i = 0; i < li.length; i++){
+                li[i].classList.add("completadas");
+                li[i].classList.toggle("animacionselect");
+            }   
+        }
+        
+
+       
+
+
+
+    </script>
+
+</body>
+</html>
+

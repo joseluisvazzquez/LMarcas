@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"/>
+    <title>Actividades</title>
+</head>
+<body>
+    
+    <div class="center">
+        <h1>Web Development</h1>
+        <div class="intro">
+            <p>
+                Here, you can find all of my activities that I did or I'm currently working on in Web Development...
+            </p>
+        </div>
+    </div>
+    <div class="center">
+        <button id="show">Activities</button>
+        <div id="list" class="list">
+                <ul id="ul">
+                    <li onclick="window.location.href='https://joseluisvazzquez.github.io/LMarcas/Actividad1/index.html';">1- Start Point</li>
+                    <li onclick="window.location.href='https://joseluisvazzquez.github.io/LMarcas/Actividad2/index.html';">2- How to 'ul' and 'li'</li>
+                    <li onclick="window.location.href='https://joseluisvazzquez.github.io/LMarcas/Actividad3/index.html';">3- Tables</li>
+                    <li onclick="window.location.href='https://joseluisvazzquez.github.io/LMarcas/Actividad4/index.html';">4- Tables II</li>
+                    <li onclick="window.location.href='https://joseluisvazzquez.github.io/LMarcas/Actividad6/index.html';">5- Tables and Application forms</li>
+                    <li onclick="window.location.href='https://joseluisvazzquez.github.io/LMarcas/Actividad7/index.html';">6- Tables and Application forms II</li>
+                    <li onclick="window.location.href='https://joseluisvazzquez.github.io/LMarcas/Actividad8/index.html';">7- Semantic Elements</li>
+                    <li onclick="window.location.href='https://joseluisvazzquez.github.io/LMarcas/Actividad9/index.html';">8- Semantic Elements II</li>
+                    <li onclick="window.location.href='https://joseluisvazzquez.github.io/LMarcas/Actividad10/index.html';">9- Start Point CSS and Page Structure</li>
+                    <li onclick="window.location.href='https://joseluisvazzquez.github.io/LMarcas/Actividad11/index.html';">10- CSS and Page Structure II</li>
+                    <li onclick="window.location.href='https://joseluisvazzquez.github.io/LMarcas/Actividad12/index.html';">11- Introduction Reactive Pages</li>
+                    <li onclick="window.location.href='https://joseluisvazzquez.github.io/LMarcas/Actividad13/index.html';">12- Reactive pages and columns</li>
+                    <li onclick="window.location.href='https://joseluisvazzquez.github.io/LMarcas/Actividad14/index.html';">13- Navigation bar</li>
+                    <li onclick="window.location.href='https://joseluisvazzquez.github.io/LMarcas/Actividad15/index.html';">14- Use of display flex 'final'</li>
+                    <li onclick="window.location.href='https://joseluisvazzquez.github.io/LMarcas/Actividad16/index.html';">15- Use of display flex in columns 'final'</li>
+                    <li onclick="window.location.href='https://joseluisvazzquez.github.io/LMarcas/Actividad17/index.html';">16- Introduction in display 'grid'</li>
+                    <li onclick="window.location.href='https://joseluisvazzquez.github.io/LMarcas/Actividad18/index.html';">17- Introduction in Media Query</li>
+                    <li onclick="window.location.href='https://joseluisvazzquez.github.io/LMarcas/Actividad19/index.html';">18- Navigation bar with query</li>
+                    <li onclick="window.location.href='https://joseluisvazzquez.github.io/LMarcas/Actividad20/index.html';">19- Final page activity</li>
+                    <li onclick="window.location.href='https://joseluisvazzquez.github.io/LMarcas/Actividad21/index.html';">20- First steps into JavaScript</li>
+                    <li onclick="window.location.href='https://joseluisvazzquez.github.io/LMarcas/Actividad22/index.html';">21- JavaScript II</li>
+                    <li onclick="window.location.href='https://joseluisvazzquez.github.io/LMarcas/Actividad23/index.html';">22- javaScript III</li>
+                    <li onclick="window.location.href='https://joseluisvazzquez.github.io/LMarcas/Actividad24/index.html';">23- JavaScript, the DOM</li>
+                    <li onclick="window.location.href='https://joseluisvazzquez.github.io/LMarcas/Actividad25/index.html';">24- JavaScript, the DOM II</li>
+                    <li onclick="window.location.href='https://joseluisvazzquez.github.io/LMarcas/Actividad26/index.html';">25- JavaScript, the DOM III</li>
+                    <li onclick="window.location.href='https://joseluisvazzquez.github.io/LMarcas/Actividad27/index.html';">26- Humburger menu with JavaScript</li>
+                    <li onclick="window.location.href='https://joseluisvazzquez.github.io/LMarcas/Actividad28/index.html';">27- To do List with JavaScript</li>
+                    <li onclick="window.location.href='https://joseluisvazzquez.github.io/LMarcas/Actividad29/index.html';">28- Introduction into JQuery</li>
+                    <li onclick="window.location.href='https://joseluisvazzquez.github.io/LMarcas/Actividad30/index.html';">29- JQuery II</li>
+                </ul>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+    <script>
+
+        $(document).ready(function(){ 
+            $("#list").hide();
+            $("#show").on("click", function(){
+                $("#list").toggle(1000); 
+            });
+        });
+    </script>
+</body>
+</html>

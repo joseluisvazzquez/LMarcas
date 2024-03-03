@@ -1,0 +1,49 @@
+body{
+    background-color: #f0ffff;
+}
+p{
+    font-style: normal;
+}
+.p{
+    font-style:oblique;
+}
+
+   
+
+@media screen and (max-width: 800px){
+    body{
+        background-color:rgb(144, 144, 144);
+    }
+    p{
+        font-style:italic;
+    }
+}
+@media screen and (max-width: 600px){
+    body{
+        background-color:rgb(144, 144, 144);
+    }
+    .g::after{
+        content: "Cuidado!! Si me haces mas pequeña aparecera un gato!!"
+    }
+}
+
+@media screen and (max-width: 570px){
+    body{
+        background-color:rgb(87, 85, 85);
+    }
+    .g{
+        font-size: larger;
+    }
+    .g::after{
+        content: "Cuidado!! Si me haces mas pequeña aparecera un gato!!"
+    }
+}
+@media screen and (max-width: 560px){
+    body{
+        background-color:rgb(90, 87, 87);
+    }
+    .g::after{
+        content:"" url(s.gif);
+    }
+    
+}

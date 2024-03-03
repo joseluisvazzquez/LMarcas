@@ -1,0 +1,111 @@
+body{
+    background-image: url("fondo.jpg");
+    background-size:  cover;
+    background-repeat: none;
+}
+.center{
+    display: grid;
+    justify-content:  center;
+}
+.contain_main{
+    display: grid;
+    justify-content: center;
+    background: linear-gradient(#b7ddf9, #000b37);
+    border-radius: 50px;
+    padding: 8px;
+}
+.contain{
+    background: linear-gradient(#000d41,#b2dfff );
+    border-radius: 50px;
+    padding: 8px 15px;
+}
+
+ul{
+    letter-spacing: 3px;
+    font-family:  monospace;
+    list-style-type: none;
+} 
+li{
+    position: relative;
+    left: -20px; 
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-size: x-large;
+    font-weight: bolder;
+    margin: 30px;
+    color: #f7f7f7;
+    backdrop-filter: blur(10px);
+}
+input[type=text]{
+    margin: 5px;
+    opacity: 65%;
+    letter-spacing: 3px;
+    font-family:  monospace;
+    font-size: x-large;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    padding:10px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+    transition:
+    box-shadow 0.7s,
+    opacity 0.6s 
+    ;
+}
+
+button{
+    position: relative;
+    top: 7px;
+    margin: 3px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    transition:
+    width 0.3s,
+    height 0.3s
+
+    ;
+}
+
+button:hover{
+    width: 20px;
+    height: 32px;
+}
+input[type=text]:hover{
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
+    opacity: 100%;
+}
+.green{
+    background: linear-gradient(#00ff2f, #caffd4);
+
+}
+.yellow{
+    background: linear-gradient(#ffea00, #fffcd5);
+}
+.red{
+    background: linear-gradient(#ff0b07f8, #f8bab9f8);
+
+}
+img{
+    width:10px;
+    height: 10px;
+}
+.animacionselect{
+    position:relative; 
+    animation-name: example;
+    animation-duration: 0.08s;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    0%   { left:0px; top:0px;}
+    25%  { left:1px; top:0px;}
+    50%  { left:1px; top:1.5px;}
+    75%  { left:1.7px; top:1px;}
+    100% {left:1.5px; top:1px;}
+}
+.completadas{
+    background-color: rgba(129, 248, 110, 0.53);
+}

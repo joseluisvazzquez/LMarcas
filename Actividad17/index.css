@@ -1,0 +1,30 @@
+body{
+    display:grid;
+    grid-template-areas:
+    'header header header header header header'
+    'aside aside aside aside main main'
+    'footer footer footer footer footer footer';
+}
+header{
+    background-color: darkslateblue;
+    grid-area: header;
+}
+aside{
+    background-color:cadetblue;
+    grid-area: aside;
+}
+main{
+    background-color: aquamarine;
+    grid-area: main;
+}
+footer{
+    background-color: dimgrey;
+    grid-area: footer;
+}
+header,aside,main,footer{
+    padding: 20px 40px;
+}
+
+ul{
+    list-style:none;
+}

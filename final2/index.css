@@ -1,0 +1,54 @@
+body{
+    padding: 20;
+    margin: 10px;
+}
+.portrait{
+    background-image: url('b1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:auto;
+    overflow: hidden;
+    padding: 10px 10px 400px;
+    border-radius: 30px 0 30px 0 30px;
+    animation-name: wallchange;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+}
+@keyframes wallchange {
+    0%   {background-image: url('b1.jpg');}
+    25%  {background-image: url('b2.jpg');}
+    50%  {background-image: url('b3.jpg');}
+    75%  {background-image: url('b4.jpg');}
+    100% {background-image: url('b1.jpg');}
+  }
+.center-text{
+    display: grid;
+    justify-items: left;
+    position: relative;
+    top: 150px; left: 100px;
+    padding:10px;
+    font-weight:400;
+    font-family: sans-serif;
+    line-height: 0;
+    color: rgba(255, 255, 255, 0.965);
+    animation-name: colorchange;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes colorchange {
+    0%   {color: rgba(242, 242, 241, 0.965)}
+    25%  {color: rgba(221, 146, 232, 0.965)}
+    50%  {color:rgba(129, 157, 250, 0.965)}
+    75%  {color: rgba(135, 123, 245, 0.965)}
+    100% {color: rgba(255, 255, 255, 0.965)}
+  }
+.title{
+    font-family: sans-serif;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+.subtitle-jap{
+    font-size: 20px;
+    letter-spacing: 20px;
+}
+

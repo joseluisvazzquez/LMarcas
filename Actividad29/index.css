@@ -1,0 +1,189 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.center-text{
+    display: grid;
+    justify-items: center;
+    position: relative;
+    top: 150px;
+    padding:10px;
+    font-weight:400;
+    font-family: sans-serif;
+    line-height: 0;
+    color: rgba(255, 255, 255, 0.965);
+    animation-name: colorchange;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes colorchange {
+    0%   {color: rgba(242, 242, 241, 0.965)}
+    25%  {color: rgba(221, 146, 232, 0.965)}
+    50%  {color:rgba(129, 157, 250, 0.965)}
+    75%  {color: rgba(135, 123, 245, 0.965)}
+    100% {color: rgba(255, 255, 255, 0.965)}
+  }
+.title{
+    font-family: sans-serif;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+.subtitle-jap{
+    font-size: 20px;
+    letter-spacing: 20px;
+}
+
+.portrait{
+    background-image: url('h1.png');
+    background-color: cadetblue;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    padding: 20px 20px 360px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.40);
+}
+.section1,.section2{
+    display:flex;
+    background-image: url("h2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+    border-radius: 50px;
+    margin: 20px 50px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.40);
+    
+}
+.img-set{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    margin: 20 50px;
+}
+
+.img-set img{
+    width: 30%;
+    height: 40%;
+    margin: 6px;
+    border-radius: 50px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.40);
+    transition: 
+        box-shadow 0.3s,
+        border-radius 0.5s
+    ;
+}
+.img-set img:hover{
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.40);
+    border-radius: 70px;
+}
+.section2{
+    background-image: url("h7.png");
+    justify-content: right;
+}
+.sect-text{
+    font-family: 'Trebuchet MS';
+    letter-spacing: 2px;
+    border-radius: 50px;
+    padding: 40px;
+    width: 45%;
+    font-size: larger;
+    font-weight: 500;
+    color:rgb(255, 255, 255);
+    backdrop-filter: blur(30px);
+    transition: 
+        color 0.7s
+    ;
+}
+.sect-text:hover{
+    color:rgb(0, 0, 0);
+}
+.sect-text2:hover{
+    color:rgb(0, 0, 0);
+}
+.center-button{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.button-comment{
+    font-size: 30px;
+    font-family:  monospace;
+    font-style: italic;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    background: linear-gradient(#020202, #6e5889);
+    color: #efeeeb;
+    width: auto;
+    padding: 20px;
+    margin: 20px 80px;
+}
+#coments{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+#comenttext{
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    background:linear-gradient(#242424f8, #513c60f8);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px 50px;
+    color: aliceblue;
+    font-family: monospace;
+    font-size: 20px;
+}
+.remove{
+    border-radius: 10px;
+    padding: 10px;
+    margin: 2px;
+    border: none;
+    text-decoration: none;
+    background: linear-gradient(#ff0b07f8, #f8bab9f8);
+}
+input[type=text]{
+    opacity: 65%;
+    letter-spacing: 3px;
+    font-family:  monospace;
+    font-size: x-large;
+    background: #efe1ff;
+    width: 30%;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    padding:15px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+    margin: 20px 50px;
+    margin-bottom: 30px;
+    transition:
+    box-shadow 0.7s,
+    opacity 0.6s 
+    ;
+}
+input[type=text]:hover{
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
+    opacity: 100%;
+}
+
+@media screen and (max-width: 916px){
+    .img-set {
+        flex-direction:column;
+        align-items: center;
+    }
+    .img-set img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 530px){
+    .title{
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+    .sect-text{
+        width: auto;
+    }
+}

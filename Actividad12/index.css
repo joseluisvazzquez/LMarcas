@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(122, 122, 122);
+    font-family:Tahoma;
+
+}
+header{
+    color:sandybrown;
+    text-align: left;
+    margin-left: 30px;
+}
+nav{
+    float: left;
+    background-color:rgb(109, 109, 109);
+    margin-left:30px;
+    margin-right: 20px;  
+
+    padding-left: 0px;
+    padding-right: 120px;
+    padding-bottom: 40px;
+    text-align: center;
+    line-height: 25px;
+    margin-right: 20px;
+    margin-top: 5px;
+}   
+main{
+    float: center;
+    background-color:rgb(152, 152, 152);
+    margin-left:252px;
+    margin-right: 80px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+footer{
+    float:center;
+    background-color: rgb(87, 87, 87);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left:29px;
+    margin-right: 80px;
+}
+

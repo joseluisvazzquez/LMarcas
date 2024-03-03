@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Blueskies</title>
+</head>
+<body>
+    <div class="portrait">
+        <div class="center-text">
+            <p>ADVENTURE, EXPLORE, DISCOVER</p>
+            <h1 class="title">Explore the world!</h1>
+            <h2 class="subtitle-jap">永井宏</h2>
+        </div>    
+    </div>
+    <div class="section1">
+        <div class="sect-data">
+            <div class="destination">
+                <h3>Select Destination</h3>
+                <label for="autocomplete"></label>
+                <input id="autocomplete">
+            </div>
+            <div class="datapicker">
+                <h3>Departure Date</h3>
+                <input type="date" id="datepicker">
+                <h3>Return Date</h3>
+                <input type="date" id="datepicker2">
+            </div>
+            <div class="slider">
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            var countries = [
+            "Japan",
+            "Brazil",
+            "Russia",
+            "China",
+            "India",
+            "Germany",
+            "Egypt",
+            "Indonesia",
+            "Pakistan",
+            "Mexico",
+            "Algeria",
+            "South Africa",
+            "Thailand",
+            "Turkey",
+            "Iran",
+            "Argentina",
+            "Colombia",
+            "Italy",
+            "United States",
+            "France",
+            "Spain",
+            ];
+            $( "#autocomplete" ).autocomplete({
+              source: countries
+            });
+            
+        });
+    $( function() {
+        $( "#datepicker" ).datepicker({
+            changeMonth: true,
+            changeYear: true,
+            showOtherMonths: true
+        });
+        $( "#datepicker2" ).datepicker({
+            changeMonth: true,
+            changeYear: true,
+            showOtherMonths: true
+        });
+    });
+
+    </script>
+</body>
+</html>

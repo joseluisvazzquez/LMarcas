@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id = "contain" class="contain">
+        <div class = "align">
+            <p id="txt" class = "texto">An apple a day keeps the doctor away.</p>
+        </div>
+        <div class="align">
+            <button type="button" class="btn" id ="btn">TRANSLATE</button>
+            <button type="button" class="btn" id ="btn2">0_0</button>
+        
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("btn");
+        var y = document.getElementById("btn2");
+        x.addEventListener("click", translate);
+        y.addEventListener("mouseover", color);
+        y.addEventListener("mouseout",color2); 
+        let num = 0; 
+        function translate(){
+            num = num+1;
+            if(num == 1){
+                document.getElementById("txt").innerHTML  = "Una manzana al día mantiene al doctor en la lejanía.";
+            }else{
+                document.getElementById("txt").innerHTML  = "comer bem para ficar saudável.";
+            }
+            if(num == 3){
+                document.getElementById("txt").innerHTML  = "An apple a day keeps the doctor away.";
+                num = 0; 
+            }
+        }
+        function color(){
+            document.getElementById("contain").style.backgroundColor = "#BCD2FF"; 
+            document.getElementById("contain").style.transition = "0.5s ease-in-out";
+            document.getElementById("txt").style.color = "#ffffff"
+           
+            
+            document.getElementById("btn2").style.backgroundColor = "#BCD2FF";
+            document.getElementById("btn2").style.border ="10px solid #BCD2FF";
+
+
+        }
+        function color2(){
+            document.getElementById("contain").style.backgroundColor = "#ffffff";
+            document.getElementById("txt").style.color = "#000000"
+    
+            document.getElementById("btn2").style.backgroundColor = "#e1e3f9";
+            document.getElementById("btn2").style.border ="10px solid #515aa1";
+            
+        }  
+    </script>
+
+</body>
+
+</html>

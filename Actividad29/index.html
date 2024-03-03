@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Hiroshi Nagai</title>
+</head>
+<body>
+    <div class="portrait">
+        <div class="center-text">
+            <h1 class="title">Hiroshi Nagai</h1>
+            <h2 class="subtitle-jap">永井宏</h2>
+        </div>    
+    </div>
+    <div class="section1">
+        <div class="sect-text">
+            <p>
+                Hiroshi Nagai (Japanese: 永井博, born December 22, 1947) is a Japanese graphic designer and illustrator,
+                known for his cover designs of city pop albums in the 1980's, which established the recognizable visual
+                aesthetic associated with the loosely defined music genre.
+            </p>
+            <p>
+                Nagai was born on December 22, 1947, in Tokushima Prefecture, Japan. He was inspired to become
+                an artist by his father who enjoyed oil-painted landscapes. Later, Nagai traveled to Tokyo, where
+                he attempted to join art school, in which he was rejected. After a visit to the United States 
+                and Guam in 1975, he was impressed by its scenery, which became the starting point of his subsequent
+                style. Gaining an interest in pop art, he took inspiration from English artist David Hockney.
+                Americana became a key component in his art.
+            </p>
+        </div>
+    </div>
+    <div class="img-set">
+        <img class="img1" src="h4.jpg" alt="img">
+        <img class="img2" src="h5.png" alt="img">
+        <img class="img3" src="h6.png" alt="img">
+    </div>
+    <div class="section2">
+        <div class="sect-text">
+            <p>
+                Nagai focused on imaginations of a 1950s Americana landscape. Adapting the deep blue skies,
+                relaxed ocean side settings and sleepy nighttime cityscapes from previous pop artists. 
+                Hiroshi's paintings convey a feeling of loneliness, yet they also create a relaxing and comfortable atmosphere.
+            </p>
+        </div>
+    </div>
+    <div class="center-button">
+        <button type="button" class="button-comment" id="button">comment?</button>
+        <div id="coments">
+            <input type="text" id="text">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){ 
+            $("#coments").hide();
+            $("#button").on("click", function(){
+                $("#coments").toggle(1000); 
+            });
+        }); 
+        $(document).ready(function(){  
+            $(document).on("keypress", function(e){ 
+                var input = $("#text").val();
+                if(e.which == 13 && input != ""){
+                    var text = $("<p></p>").text(input);
+                    var textinput = $("<div id='comenttext'></div>").append(text).append("<button class='remove'></button>");
+                    $("#coments").append(textinput);
+                        $("#text").val("");
+                }
+                $(".remove").on("click", function(){
+                    $(this).parent().remove();
+                })
+                
+            });
+        });  
+    </script>
+</body>
+</html>

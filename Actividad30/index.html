@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="center">
+        <button type="button" id="button">Añadir comentario</button>
+        <div id="coments">
+            <input type="text" id="text">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){  
+            $("#button").on("click", function(){
+                $("#coments").toggle(1000); 
+            });
+        
+            $(document).on("keypress", function(e){ 
+                var input = $("#text").val();
+                if(e.which == 13 && input != ""){
+                    var text = $("<p></p>").text(input);
+                    var textinput = $("<div id='comenttext'></div>").append(text).append("<button id='remove'></button>");
+                    $("#coments").append(textinput);
+                        $("#text").val("");
+                }
+                $("#remove").on("click", function(e){
+                    $(e.target).closest("#comenttext").remove(); 
+                });   
+            });
+        });  
+       
+
+    </script>
+</body>
+</html>

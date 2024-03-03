@@ -1,0 +1,28 @@
+h2{
+    background-color:#444;
+    text-align: center;
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    color: antiquewhite;
+    font-family: 'Trebuchet MS';
+}
+.noticia{
+    font-family:'Lucida Sans Unicode';
+    padding-top: 20px;  
+    padding-bottom: 40px;
+    border-bottom:solid rgb(228, 228, 228);
+    
+}
+img{
+   vertical-align: middle;
+   width: 100px;
+   height: auto;
+}
+a{
+    color:rgba(42, 127, 29, 0.878);
+    
+}
+a:hover{
+    color:blueviolet;
+    text-decoration: underline;
+}
